@@ -49,8 +49,8 @@ notification_app_launch_context_finalize (GObject *object)
 
 static char *
 notification_app_launch_context_get_startup_notify_id (GAppLaunchContext *context,
-                                                       GAppInfo *,
-                                                       GList *)
+                                                       GAppInfo *info G_GNUC_UNUSED,
+                                                       GList *files G_GNUC_UNUSED)
 {
         NotificationAppLaunchContext *self = NOTIFICATION_APP_LAUNCH_CONTEXT (context);
 
